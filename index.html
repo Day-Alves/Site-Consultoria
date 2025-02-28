@@ -25,14 +25,27 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css" onerror="this.href='assets/css/style.css'">
+    
+    <!-- Fallback para CSS -->
+    <script>
+        function loadCSS(href) {
+            var link = document.querySelector('link[href="' + href + '"]');
+            if (link && !link.sheet) {
+                link.href = link.href.replace(/^\//, '');
+            }
+        }
+        window.onload = function() {
+            loadCSS('/assets/css/style.css');
+        }
+    </script>
 </head>
 <body>
     <!-- Header/Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="Logo Consultoria" height="40">
+                <img src="/assets/images/logo.png" alt="Logo Consultoria" height="40" onerror="this.src='assets/images/logo.png'">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
