@@ -1,5 +1,8 @@
 # Dependências
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Arquivos de ambiente
 .env
@@ -10,24 +13,19 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Arquivos de log
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
 # Arquivos de build
 /dist
 /build
 
-# Arquivos da Vercel
-.vercel
-
-# IDEs e editores
+# Arquivos de IDE/Editor
 .idea/
 .vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw? 
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+
+# Vercel
+.vercel 

@@ -2,7 +2,11 @@
     "version": 2,
     "builds": [
         {
-            "src": "*.html",
+            "src": "server.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "assets/**",
             "use": "@vercel/static"
         }
     ],
@@ -13,7 +17,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/$1"
+            "dest": "/server.js"
         }
     ],
     "github": {
