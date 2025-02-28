@@ -1,0 +1,23 @@
+{
+  "name": "consultoria-certificacoes",
+  "version": "1.0.0",
+  "description": "Site moderno e responsivo para uma empresa de consultoria especializada em certificações",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "dev": "serve",
+    "build": "echo 'No build step required'"
+  },
+  "keywords": [
+    "consultoria",
+    "certificações",
+    "OEA",
+    "ISO",
+    "LGPD"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+} 
